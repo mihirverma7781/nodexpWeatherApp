@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node Weather App</title>
+
+       {{!-- header Links --}}
+    {{>headerLinks}}
+    {{!--  --}}
+    
+  </head>
+  <body>
+
+{{!-- navbar --}}
+{{>nav}}
+{{!--  --}}
+
+    <!-- main content -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            <div class="row">
+                <!-- left div -->
+                <div class="col-md-6 col-12 main_header_left">
+                    <p>Welcome to weather app.</p>
+                    <h1>I Am A <span class="text-color">MERN Stack Developer</span>, Designer & Freelancer</h1>
+                    <a href="https://mihirv.netlify.app"><button class="btn btn-primary">About Me</button></a>
+                </div>
+
+                <!-- right div -->
+                <div class="col-md-6 col-12 main_header_right">
+                        <figure>
+                            <img src="./images/car7.png" class="img-fluid" alt="image"/>
+                        </figure>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+{{>footer}}
+{{!--  --}}
+
+  </body>
+</html>

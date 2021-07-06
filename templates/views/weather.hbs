@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node Weather App</title>
+
+    {{!-- header Links --}}
+    {{>headerLinks}}
+    {{!--  --}}
+  
+  </head>
+  <body>
+  
+  {{!-- navbar --}}
+  {{>nav}}
+  {{!--  --}}
+    <!-- main content -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            {{!-- main content --}}
+                <div class="main_content">
+                    <form class="temp_form">
+                        <input type="text" name="" id="cityName" placeholder="enter your city name" autocomplete="off">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+
+                <div class="tempInformation">
+                    <div class="top_layer">
+                        <p id="day" style="color:rgb(0, 204, 255);">Tuesday</p>
+                        <p class="today_date" id="today_date" style="color:rgb(0, 204, 255);">05 JUL</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">Get Output Here</p>
+                        <div class="middle_layer data_hide">
+                                <p id="temp"><span >0</span><sup>o</sup>c</p>
+                                <p id="temp_status">
+                            
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            {{!--  --}}
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+      {{>footer}}
+      <script src="js/main.js"></script>
+    {{!--  --}}
+  </body>
+</html>
